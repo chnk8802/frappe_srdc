@@ -1,0 +1,251 @@
+2023-11-13 23:40:26,851 DEBUG cd frappe-bench && python3.11 -m venv env
+2023-11-13 23:40:28,903 DEBUG cd frappe-bench && /home/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-11-13 23:40:30,126 DEBUG cd frappe-bench && /home/frappe/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-11-13 23:40:31,511 LOG Getting frappe
+2023-11-13 23:40:31,511 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-11-13 23:40:39,913 LOG Installing frappe
+2023-11-13 23:40:39,913 DEBUG cd /home/frappe/frappe-bench && /home/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/frappe/frappe-bench/apps/frappe 
+2023-11-13 23:41:10,661 DEBUG cd /home/frappe/frappe-bench/apps/frappe && yarn install
+2023-11-13 23:41:20,158 DEBUG cd /home/frappe/frappe-bench && sudo supervisorctl restart frappe:
+2023-11-13 23:41:20,292 WARNING cd /home/frappe/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2023-11-13 23:41:20,292 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-11-13 23:41:20,292 DEBUG cd frappe-bench && bench build
+2023-11-13 23:41:20,359 INFO /usr/local/bin/bench build
+2023-11-13 23:41:34,622 LOG setting up backups
+2023-11-13 23:41:34,635 LOG backups were set up
+2023-11-13 23:41:34,635 INFO Bench frappe-bench initialized
+2023-11-13 23:51:02,990 INFO /usr/local/bin/bench new-site erp.srdc.io --admin-password erpadmin --mariadb-root-username root --mariadb-root-password mariadb_password
+2023-11-13 23:51:24,570 INFO /usr/local/bin/bench new-site erp.srdc.io --admin-password erpadmin --mariadb-root-username root --mariadb-root-password Naveen@2001
+2023-11-14 00:00:01,483 INFO /usr/local/bin/bench --verbose --site all backup
+2023-11-14 00:15:24,264 INFO /usr/local/bin/bench drop-site erp.example.io --yes
+2023-11-14 00:15:38,769 INFO /usr/local/bin/bench drop-site erp.example.io
+2023-11-14 00:34:46,893 INFO /usr/local/bin/bench new-site srdc.local
+2023-11-14 00:36:18,834 INFO /usr/local/bin/bench get-app education
+2023-11-14 00:36:19,536 LOG Getting education
+2023-11-14 00:36:19,537 DEBUG cd ./apps && git clone https://github.com/frappe/education.git  --depth 1 --origin upstream
+2023-11-14 00:36:20,956 LOG Installing education
+2023-11-14 00:36:21,018 DEBUG cd /home/frappe/frappe-bench && /home/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/frappe/frappe-bench/apps/education 
+2023-11-14 00:36:22,150 DEBUG bench build --app education
+2023-11-14 00:36:22,215 INFO /usr/local/bin/bench build --app education
+2023-11-14 00:36:26,923 DEBUG cd /home/frappe/frappe-bench && sudo supervisorctl restart frappe:
+2023-11-14 00:36:27,058 WARNING cd /home/frappe/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2023-11-14 00:36:27,058 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-11-14 00:38:22,595 INFO /usr/local/bin/bench --site srdc.local install-app education
+2023-11-14 00:39:03,150 INFO /usr/local/bin/bench --site srdc.local clear-cache
+2023-11-14 00:39:24,662 INFO /usr/local/bin/bench use srdc.local
+2023-11-14 00:39:31,582 INFO /usr/local/bin/bench --site srdc.local install-app education
+2023-11-14 00:48:19,492 INFO /usr/local/bin/bench use srdc.local
+2023-11-14 00:48:24,540 INFO /usr/local/bin/bench --site srdc.local install-app education
+2023-11-14 00:49:12,643 INFO /usr/local/bin/bench use erp.srdc.io
+2023-11-14 00:49:30,118 INFO /usr/local/bin/bench --site erp.srdc.io install-app education
+2023-11-14 00:49:50,819 INFO /usr/local/bin/bench --site your-site-name migrate
+2023-11-14 00:49:51,614 INFO /usr/local/bin/bench --site your-site-name clear-cache
+2023-11-14 00:49:52,214 INFO /usr/local/bin/bench --site your-site-name restart
+2023-11-14 00:49:52,220 WARNING /usr/local/bin/bench --site your-site-name restart executed with exit code 2
+2023-11-14 00:50:11,944 INFO /usr/local/bin/bench --site your-site-name migrate
+2023-11-14 00:50:12,678 INFO /usr/local/bin/bench --site your-site-name clear-cache
+2023-11-14 00:50:13,282 INFO /usr/local/bin/bench --site srdc.local restart
+2023-11-14 00:50:13,288 WARNING /usr/local/bin/bench --site srdc.local restart executed with exit code 2
+2023-11-14 00:51:10,283 INFO /usr/local/bin/bench --site srdc.local migrate
+2023-11-14 00:51:11,043 INFO /usr/local/bin/bench --site srdc.local clear-cache
+2023-11-14 00:51:11,679 INFO /usr/local/bin/bench --site srdc.local restart
+2023-11-14 00:51:11,685 WARNING /usr/local/bin/bench --site srdc.local restart executed with exit code 2
+2023-11-14 01:01:12,448 INFO /usr/local/bin/bench use srdc.local
+2023-11-14 01:02:15,694 INFO /usr/local/bin/bench --site srdc.local migrate
+2023-11-14 01:02:16,481 INFO /usr/local/bin/bench --site srdc.local clear-cache
+2023-11-14 01:02:17,090 INFO /usr/local/bin/bench --site srdc.local restart
+2023-11-14 01:02:17,096 WARNING /usr/local/bin/bench --site srdc.local restart executed with exit code 2
+2023-11-14 01:09:24,068 INFO /usr/local/bin/bench --site srdc.local clear-cachebench --site srdc.local migrate
+2023-11-14 01:09:24,542 INFO /usr/local/bin/bench --site srdc.local clear-cache
+2023-11-14 01:09:25,178 INFO /usr/local/bin/bench --site srdc.local restart
+2023-11-14 01:09:25,184 WARNING /usr/local/bin/bench --site srdc.local restart executed with exit code 2
+2023-11-14 01:10:00,856 INFO /usr/local/bin/bench --site srdc.local restart
+2023-11-14 01:10:00,863 WARNING /usr/local/bin/bench --site srdc.local restart executed with exit code 2
+2023-11-14 01:10:28,322 INFO /usr/local/bin/bench start
+2023-11-14 01:10:28,542 INFO /usr/local/bin/bench schedule
+2023-11-14 01:10:28,549 INFO /usr/local/bin/bench watch
+2023-11-14 01:10:28,582 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 01:10:28,603 INFO /usr/local/bin/bench worker
+2023-11-14 10:56:53,694 INFO /usr/local/bin/bench start
+2023-11-14 10:56:53,915 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 10:56:53,917 INFO /usr/local/bin/bench watch
+2023-11-14 10:56:53,923 INFO /usr/local/bin/bench schedule
+2023-11-14 10:56:53,942 INFO /usr/local/bin/bench worker
+2023-11-14 11:01:46,374 INFO /usr/local/bin/bench start
+2023-11-14 11:01:46,589 INFO /usr/local/bin/bench worker
+2023-11-14 11:01:46,601 INFO /usr/local/bin/bench schedule
+2023-11-14 11:01:46,632 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:01:46,663 INFO /usr/local/bin/bench watch
+2023-11-14 11:02:51,094 INFO /usr/local/bin/bench start
+2023-11-14 11:02:51,319 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:02:51,329 INFO /usr/local/bin/bench watch
+2023-11-14 11:02:51,378 INFO /usr/local/bin/bench schedule
+2023-11-14 11:02:51,414 INFO /usr/local/bin/bench worker
+2023-11-14 11:04:43,055 INFO /usr/local/bin/bench start
+2023-11-14 11:04:43,277 INFO /usr/local/bin/bench watch
+2023-11-14 11:04:43,306 INFO /usr/local/bin/bench schedule
+2023-11-14 11:04:43,331 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:04:43,378 INFO /usr/local/bin/bench worker
+2023-11-14 11:08:47,532 INFO /usr/local/bin/bench use srdc.local
+2023-11-14 11:08:53,174 INFO /usr/local/bin/bench start
+2023-11-14 11:08:53,384 INFO /usr/local/bin/bench watch
+2023-11-14 11:08:53,414 INFO /usr/local/bin/bench worker
+2023-11-14 11:08:53,416 INFO /usr/local/bin/bench schedule
+2023-11-14 11:08:53,447 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:09:39,688 INFO /usr/local/bin/bench start
+2023-11-14 11:09:39,898 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:09:39,901 INFO /usr/local/bin/bench watch
+2023-11-14 11:09:39,931 INFO /usr/local/bin/bench schedule
+2023-11-14 11:09:39,939 INFO /usr/local/bin/bench worker
+2023-11-14 11:12:17,367 INFO /usr/local/bin/bench start
+2023-11-14 11:12:17,581 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:12:17,597 INFO /usr/local/bin/bench schedule
+2023-11-14 11:12:17,652 INFO /usr/local/bin/bench worker
+2023-11-14 11:12:17,680 INFO /usr/local/bin/bench watch
+2023-11-14 11:14:40,398 INFO /usr/local/bin/bench start
+2023-11-14 11:14:40,609 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:14:40,615 INFO /usr/local/bin/bench watch
+2023-11-14 11:14:40,652 INFO /usr/local/bin/bench worker
+2023-11-14 11:14:40,673 INFO /usr/local/bin/bench schedule
+2023-11-14 11:16:11,908 INFO /usr/local/bin/bench start
+2023-11-14 11:16:12,132 INFO /usr/local/bin/bench worker
+2023-11-14 11:16:12,148 INFO /usr/local/bin/bench schedule
+2023-11-14 11:16:12,154 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 11:16:12,202 INFO /usr/local/bin/bench watch
+2023-11-14 12:00:01,726 INFO /usr/local/bin/bench --verbose --site all backup
+2023-11-14 13:05:25,818 INFO /usr/local/bin/bench start
+2023-11-14 13:05:26,041 INFO /usr/local/bin/bench watch
+2023-11-14 13:05:26,049 INFO /usr/local/bin/bench schedule
+2023-11-14 13:05:26,077 INFO /usr/local/bin/bench worker
+2023-11-14 13:05:26,112 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:06:54,515 INFO /usr/local/bin/bench start
+2023-11-14 13:06:54,726 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:06:54,745 INFO /usr/local/bin/bench worker
+2023-11-14 13:06:54,806 INFO /usr/local/bin/bench schedule
+2023-11-14 13:06:54,852 INFO /usr/local/bin/bench watch
+2023-11-14 13:13:14,915 INFO /usr/local/bin/bench start
+2023-11-14 13:13:15,129 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:13:15,133 INFO /usr/local/bin/bench worker
+2023-11-14 13:13:15,166 INFO /usr/local/bin/bench schedule
+2023-11-14 13:13:15,168 INFO /usr/local/bin/bench watch
+2023-11-14 13:16:13,908 INFO /usr/local/bin/bench start
+2023-11-14 13:16:14,137 INFO /usr/local/bin/bench worker
+2023-11-14 13:16:14,143 INFO /usr/local/bin/bench schedule
+2023-11-14 13:16:14,150 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:16:14,167 INFO /usr/local/bin/bench watch
+2023-11-14 13:16:55,899 INFO /usr/local/bin/bench start
+2023-11-14 13:16:56,116 INFO /usr/local/bin/bench schedule
+2023-11-14 13:16:56,129 INFO /usr/local/bin/bench watch
+2023-11-14 13:16:56,136 INFO /usr/local/bin/bench worker
+2023-11-14 13:16:56,138 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:23:05,178 INFO /usr/local/bin/bench start
+2023-11-14 13:23:05,399 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:23:05,399 INFO /usr/local/bin/bench watch
+2023-11-14 13:23:05,400 INFO /usr/local/bin/bench worker
+2023-11-14 13:23:05,442 INFO /usr/local/bin/bench schedule
+2023-11-14 13:24:50,137 INFO /usr/local/bin/bench start
+2023-11-14 13:24:50,355 INFO /usr/local/bin/bench schedule
+2023-11-14 13:24:50,364 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:24:50,375 INFO /usr/local/bin/bench watch
+2023-11-14 13:24:50,449 INFO /usr/local/bin/bench worker
+2023-11-14 13:29:25,629 INFO /usr/local/bin/bench start
+2023-11-14 13:29:25,855 INFO /usr/local/bin/bench worker
+2023-11-14 13:29:25,879 INFO /usr/local/bin/bench schedule
+2023-11-14 13:29:25,879 INFO /usr/local/bin/bench watch
+2023-11-14 13:29:25,899 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:31:43,334 INFO /usr/local/bin/bench start
+2023-11-14 13:31:43,563 INFO /usr/local/bin/bench schedule
+2023-11-14 13:31:43,569 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:31:43,575 INFO /usr/local/bin/bench worker
+2023-11-14 13:31:43,605 INFO /usr/local/bin/bench watch
+2023-11-14 13:46:00,014 INFO /usr/local/bin/bench start
+2023-11-14 13:46:00,232 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 13:46:00,233 INFO /usr/local/bin/bench watch
+2023-11-14 13:46:00,259 INFO /usr/local/bin/bench schedule
+2023-11-14 13:46:00,319 INFO /usr/local/bin/bench worker
+2023-11-14 13:49:03,831 INFO /usr/local/bin/bench new-site site1 --admin-password ‘site1’ --mariadb-root-username admin --mariadb-root-password ‘rootpassword’ --force
+2023-11-14 13:49:22,829 INFO /usr/local/bin/bench new-site site1 --admin-password ‘site1’ --mariadb-root-username admin --mariadb-root-password ‘rootpassword’ --force
+2023-11-14 13:56:25,635 INFO /usr/local/bin/bench new-site mysite --db-host 192.168.1.100 --db-port 3306
+2023-11-14 13:59:26,101 INFO /usr/local/bin/bench new-site mysite
+2023-11-14 14:09:31,398 INFO /usr/local/bin/bench --site srdc.io
+2023-11-14 14:10:05,210 INFO /usr/local/bin/bench new-site srdc.io
+2023-11-14 14:11:15,072 INFO /usr/local/bin/bench new-site srdc.io
+2023-11-14 14:14:37,391 INFO /usr/local/bin/bench new-site srdc.local
+2023-11-14 14:15:15,793 INFO /usr/local/bin/bench new-site srdc.local
+2023-11-14 14:15:32,743 INFO /usr/local/bin/bench start
+2023-11-14 14:15:32,961 INFO /usr/local/bin/bench worker
+2023-11-14 14:15:32,969 INFO /usr/local/bin/bench watch
+2023-11-14 14:15:32,980 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 14:15:32,995 INFO /usr/local/bin/bench schedule
+2023-11-14 14:19:51,691 INFO /usr/local/bin/bench new-site erp.srdc.io
+2023-11-14 14:20:46,063 INFO /usr/local/bin/bench start
+2023-11-14 14:20:46,303 INFO /usr/local/bin/bench worker
+2023-11-14 14:20:46,310 INFO /usr/local/bin/bench watch
+2023-11-14 14:20:46,325 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 14:20:46,354 INFO /usr/local/bin/bench schedule
+2023-11-14 14:22:17,876 INFO /usr/local/bin/bench use erp.srdc.io
+2023-11-14 14:22:21,694 INFO /usr/local/bin/bench start
+2023-11-14 14:22:21,911 INFO /usr/local/bin/bench worker
+2023-11-14 14:22:21,923 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 14:22:21,926 INFO /usr/local/bin/bench schedule
+2023-11-14 14:22:21,979 INFO /usr/local/bin/bench watch
+2023-11-14 14:27:44,202 INFO /usr/local/bin/bench --site erp.srdc.io install-app education
+2023-11-14 14:28:08,220 INFO /usr/local/bin/bench --site erp.srdc.io install-app erpnext
+2023-11-14 14:29:34,070 INFO /usr/local/bin/bench --site [erp.srdc.io install-app erpnext
+2023-11-14 14:30:27,264 INFO /usr/local/bin/bench --site erp.srdc.io install-app erpnext
+2023-11-14 14:30:55,918 INFO /usr/local/bin/bench --site erp.srdc.io install-app erpnext
+2023-11-14 14:50:44,651 INFO /usr/local/bin/bench --site erp.srdc.io install-app education
+2023-11-14 14:50:56,442 INFO /usr/local/bin/bench --site erp.srdc.io install-app erpnext
+2023-11-14 14:51:26,326 INFO /usr/local/bin/bench start
+2023-11-14 14:51:26,540 INFO /usr/local/bin/bench watch
+2023-11-14 14:51:26,544 INFO /usr/local/bin/bench schedule
+2023-11-14 14:51:26,546 INFO /usr/local/bin/bench worker
+2023-11-14 14:51:26,622 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 14:54:11,741 INFO /usr/local/bin/bench start
+2023-11-14 14:54:11,952 INFO /usr/local/bin/bench watch
+2023-11-14 14:54:11,958 INFO /usr/local/bin/bench serve --port 8000
+2023-11-14 14:54:11,971 INFO /usr/local/bin/bench worker
+2023-11-14 14:54:12,056 INFO /usr/local/bin/bench schedule
+2023-11-14 14:55:10,271 INFO /usr/local/bin/bench --site erp.srdc.io install-app education
+2023-11-14 14:55:22,425 INFO /usr/local/bin/bench --site erp.srdc.io install-app erpnext
+2023-11-14 14:56:10,675 INFO /usr/local/bin/bench update
+2023-11-14 14:56:10,686 WARNING /usr/local/bin/bench update executed with exit code 1
+2023-11-14 14:57:18,526 INFO /usr/local/bin/bench --site erp.srdc.io migrate
+2023-11-14 14:57:19,312 INFO /usr/local/bin/bench --site erp.srdc.io clear-cache
+2023-11-14 14:57:31,716 INFO /usr/local/bin/bench update
+2023-11-14 14:57:31,724 WARNING /usr/local/bin/bench update executed with exit code 1
+2023-11-14 14:57:58,743 INFO /usr/local/bin/bench --site erp.srdc.io install-app erpnext
+2023-11-14 14:59:34,568 INFO /usr/local/bin/bench update --branch version-13
+2023-11-14 14:59:34,583 WARNING /usr/local/bin/bench update --branch version-13 executed with exit code 2
+2023-11-14 15:01:30,291 INFO /usr/local/bin/bench get-app --branch version-14 erpnext
+2023-11-14 15:01:38,072 WARNING /usr/local/bin/bench get-app --branch version-14 erpnext executed with exit code 1
+2023-11-14 18:00:02,070 INFO /usr/local/bin/bench --verbose --site all backup
+2023-11-15 00:50:05,093 INFO /usr/local/bin/bench start
+2023-11-15 00:50:05,309 INFO /usr/local/bin/bench worker
+2023-11-15 00:50:05,342 INFO /usr/local/bin/bench serve --port 8000
+2023-11-15 00:50:05,360 INFO /usr/local/bin/bench watch
+2023-11-15 00:50:05,365 INFO /usr/local/bin/bench schedule
+2023-11-15 11:44:37,727 INFO /usr/local/bin/bench --site erpsrdc.io install-app education
+2023-11-15 11:44:46,142 INFO /usr/local/bin/bench --site erp.srdc.io install-app education
+2023-11-15 11:46:55,208 INFO /usr/local/bin/bench --site erp.srdc.io list-apps
+2023-11-15 11:48:03,962 INFO /usr/local/bin/bench list-apps
+2023-11-15 11:54:48,827 INFO /usr/local/bin/bench --site erp.srdc.io migrate
+2023-11-15 11:55:16,172 INFO /usr/local/bin/bench start
+2023-11-15 11:55:16,399 INFO /usr/local/bin/bench schedule
+2023-11-15 11:55:16,405 INFO /usr/local/bin/bench watch
+2023-11-15 11:55:16,408 INFO /usr/local/bin/bench serve --port 8000
+2023-11-15 11:55:16,451 INFO /usr/local/bin/bench worker
+2023-11-15 11:57:19,072 INFO /usr/local/bin/bench --site erp.srdc.io migrate
+2023-11-15 11:58:18,551 INFO /usr/local/bin/bench list-apps
+2023-11-15 11:58:36,507 INFO /usr/local/bin/bench status
+2023-11-15 11:59:52,475 INFO /usr/local/bin/bench update --upgrade
+2023-11-15 11:59:52,490 WARNING /usr/local/bin/bench update --upgrade executed with exit code 2
+2023-11-15 12:00:00,734 INFO /usr/local/bin/bench --help
+2023-11-15 12:00:01,983 INFO /usr/local/bin/bench --verbose --site all backup
+2023-11-15 12:00:21,729 INFO /usr/local/bin/bench update
+2023-11-15 12:00:21,766 WARNING /usr/local/bin/bench update executed with exit code 1
+2023-11-15 12:02:22,833 INFO /usr/local/bin/bench list-apps
+2023-11-15 12:03:29,780 INFO /usr/local/bin/bench --site all list-apps
+2023-11-15 12:03:39,787 INFO /usr/local/bin/bench --site all list-apps --format json
+2023-11-15 12:05:12,339 INFO /usr/local/bin/bench update
+2023-11-15 12:05:12,346 WARNING /usr/local/bin/bench update executed with exit code 1

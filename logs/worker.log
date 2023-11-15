@@ -1,0 +1,521 @@
+2023-11-14 01:10:29,442 Worker rq:worker:06345114ee4a4cffaedf4a79ce2869af: started, version 1.11.1
+2023-11-14 01:10:29,442 Subscribing to channel rq:pubsub:06345114ee4a4cffaedf4a79ce2869af
+2023-11-14 01:10:29,443 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 01:10:29,443 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 01:10:29,444 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 01:10:29,444 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 10:56:54,825 Worker rq:worker:85c293af559b480d8793118ae00a6057: started, version 1.11.1
+2023-11-14 10:56:54,826 Subscribing to channel rq:pubsub:85c293af559b480d8793118ae00a6057
+2023-11-14 10:56:54,826 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 10:56:54,826 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 10:56:54,827 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 10:56:54,827 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 11:01:39,934 Warm shut down requested
+2023-11-14 11:01:47,383 Worker rq:worker:171e4f0f04584f0da24a7b4f0cb19237: started, version 1.11.1
+2023-11-14 11:01:47,383 Subscribing to channel rq:pubsub:171e4f0f04584f0da24a7b4f0cb19237
+2023-11-14 11:01:47,384 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 11:02:23,541 Warm shut down requested
+2023-11-14 11:02:52,132 Worker rq:worker:998f49e3d9b746099cffbb87b9e48a2f: started, version 1.11.1
+2023-11-14 11:02:52,132 Subscribing to channel rq:pubsub:998f49e3d9b746099cffbb87b9e48a2f
+2023-11-14 11:02:52,133 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 11:04:41,330 Warm shut down requested
+2023-11-14 11:04:41,358 Unsubscribing from channel rq:pubsub:998f49e3d9b746099cffbb87b9e48a2f
+2023-11-14 11:04:44,082 Worker rq:worker:f36a22d16b564fed917a6f80a8c1af6d: started, version 1.11.1
+2023-11-14 11:04:44,082 Subscribing to channel rq:pubsub:f36a22d16b564fed917a6f80a8c1af6d
+2023-11-14 11:04:44,082 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 11:08:31,849 Warm shut down requested
+2023-11-14 11:08:31,864 Unsubscribing from channel rq:pubsub:f36a22d16b564fed917a6f80a8c1af6d
+2023-11-14 11:08:54,113 Worker rq:worker:b49451a7e1ed46889d19fa89f01f316e: started, version 1.11.1
+2023-11-14 11:08:54,114 Subscribing to channel rq:pubsub:b49451a7e1ed46889d19fa89f01f316e
+2023-11-14 11:08:54,115 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 11:09:37,532 Warm shut down requested
+2023-11-14 11:09:37,537 Unsubscribing from channel rq:pubsub:b49451a7e1ed46889d19fa89f01f316e
+2023-11-14 11:09:40,676 Worker rq:worker:b68e20b52a8542f3bde29c1d9f7525b3: started, version 1.11.1
+2023-11-14 11:09:40,676 Subscribing to channel rq:pubsub:b68e20b52a8542f3bde29c1d9f7525b3
+2023-11-14 11:09:40,678 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 11:12:15,731 Warm shut down requested
+2023-11-14 11:12:15,742 Unsubscribing from channel rq:pubsub:b68e20b52a8542f3bde29c1d9f7525b3
+2023-11-14 11:12:18,338 Worker rq:worker:cf9ca288f69a47a9bc8a29c514d7cc46: started, version 1.11.1
+2023-11-14 11:12:18,338 Subscribing to channel rq:pubsub:cf9ca288f69a47a9bc8a29c514d7cc46
+2023-11-14 11:12:18,339 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 11:12:18,339 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 11:12:18,340 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 11:12:18,340 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 11:14:38,685 Warm shut down requested
+2023-11-14 11:14:38,694 Unsubscribing from channel rq:pubsub:cf9ca288f69a47a9bc8a29c514d7cc46
+2023-11-14 13:06:55,464 Worker rq:worker:0b5471626e1a41abb794dc897bccec41: started, version 1.11.1
+2023-11-14 13:06:55,490 Subscribing to channel rq:pubsub:0b5471626e1a41abb794dc897bccec41
+2023-11-14 13:06:55,491 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:06:55,491 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 13:06:55,492 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 13:06:55,492 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 13:07:33,340 Warm shut down requested
+2023-11-14 13:07:33,367 Unsubscribing from channel rq:pubsub:0b5471626e1a41abb794dc897bccec41
+2023-11-14 13:13:15,963 Worker rq:worker:c320d4d87f8a46018200b54f80239a35: started, version 1.11.1
+2023-11-14 13:13:15,963 Subscribing to channel rq:pubsub:c320d4d87f8a46018200b54f80239a35
+2023-11-14 13:13:15,963 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:15:03,470 Warm shut down requested
+2023-11-14 13:15:03,497 Unsubscribing from channel rq:pubsub:c320d4d87f8a46018200b54f80239a35
+2023-11-14 13:16:14,967 Worker rq:worker:a9aed90e3a8544f5ada6043bd728ca4f: started, version 1.11.1
+2023-11-14 13:16:14,967 Subscribing to channel rq:pubsub:a9aed90e3a8544f5ada6043bd728ca4f
+2023-11-14 13:16:14,968 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:16:54,433 Warm shut down requested
+2023-11-14 13:16:54,437 Unsubscribing from channel rq:pubsub:a9aed90e3a8544f5ada6043bd728ca4f
+2023-11-14 13:16:57,065 Worker rq:worker:c8d55ae06bea48158c95ad8fb01810db: started, version 1.11.1
+2023-11-14 13:16:57,065 Subscribing to channel rq:pubsub:c8d55ae06bea48158c95ad8fb01810db
+2023-11-14 13:16:57,066 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:19:55,842 Warm shut down requested
+2023-11-14 13:23:06,213 Worker rq:worker:6f5e355200084ee0b6614e53051930c2: started, version 1.11.1
+2023-11-14 13:23:06,214 Subscribing to channel rq:pubsub:6f5e355200084ee0b6614e53051930c2
+2023-11-14 13:23:06,215 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:23:06,215 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 13:23:06,216 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 13:23:06,216 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 13:24:49,017 Warm shut down requested
+2023-11-14 13:24:49,019 Unsubscribing from channel rq:pubsub:6f5e355200084ee0b6614e53051930c2
+2023-11-14 13:24:51,188 Worker rq:worker:aea37f0c472c4bd2994725e1cb0d377b: started, version 1.11.1
+2023-11-14 13:24:51,188 Subscribing to channel rq:pubsub:aea37f0c472c4bd2994725e1cb0d377b
+2023-11-14 13:24:51,189 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:28:31,661 Warm shut down requested
+2023-11-14 13:28:31,676 Unsubscribing from channel rq:pubsub:aea37f0c472c4bd2994725e1cb0d377b
+2023-11-14 13:29:26,761 Worker rq:worker:35f6cb78f12e465393640071819155aa: started, version 1.11.1
+2023-11-14 13:29:26,761 Subscribing to channel rq:pubsub:35f6cb78f12e465393640071819155aa
+2023-11-14 13:29:26,762 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:30:52,631 Warm shut down requested
+2023-11-14 13:30:52,637 Unsubscribing from channel rq:pubsub:35f6cb78f12e465393640071819155aa
+2023-11-14 13:31:44,393 Worker rq:worker:04c97d354cc64ab09aad05e0a8146296: started, version 1.11.1
+2023-11-14 13:31:44,393 Subscribing to channel rq:pubsub:04c97d354cc64ab09aad05e0a8146296
+2023-11-14 13:31:44,394 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:41:41,106 Warm shut down requested
+2023-11-14 13:41:41,109 Unsubscribing from channel rq:pubsub:04c97d354cc64ab09aad05e0a8146296
+2023-11-14 13:46:01,034 Worker rq:worker:2ab93a3554e640068dc93d0363b2ccb2: started, version 1.11.1
+2023-11-14 13:46:01,034 Subscribing to channel rq:pubsub:2ab93a3554e640068dc93d0363b2ccb2
+2023-11-14 13:46:01,035 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 13:46:01,036 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 13:46:01,036 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 13:46:01,036 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 13:47:45,634 Warm shut down requested
+2023-11-14 13:47:45,640 Unsubscribing from channel rq:pubsub:2ab93a3554e640068dc93d0363b2ccb2
+2023-11-14 14:15:33,760 Worker rq:worker:5b73ab07499f47b388ab31562438acb9: started, version 1.11.1
+2023-11-14 14:15:33,761 Subscribing to channel rq:pubsub:5b73ab07499f47b388ab31562438acb9
+2023-11-14 14:15:33,761 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 14:15:33,762 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 14:15:33,762 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 14:15:33,763 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 14:19:36,459 Warm shut down requested
+2023-11-14 14:19:36,463 Unsubscribing from channel rq:pubsub:5b73ab07499f47b388ab31562438acb9
+2023-11-14 14:20:47,001 Worker rq:worker:b27968370ea8401c89f1189f7834ad32: started, version 1.11.1
+2023-11-14 14:20:47,002 Subscribing to channel rq:pubsub:b27968370ea8401c89f1189f7834ad32
+2023-11-14 14:20:47,004 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 14:22:07,937 Warm shut down requested
+2023-11-14 14:22:07,939 Unsubscribing from channel rq:pubsub:b27968370ea8401c89f1189f7834ad32
+2023-11-14 14:22:22,647 Worker rq:worker:ab01cbc8211c42e99222509f567b97f7: started, version 1.11.1
+2023-11-14 14:22:22,647 Subscribing to channel rq:pubsub:ab01cbc8211c42e99222509f567b97f7
+2023-11-14 14:22:22,648 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 14:25:24,925 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: naveenchaudharyyyy@gmail.com>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='erp.srdc.io', user='Administrator') (ce5b29f5-2011-4f12-906d-cb13e4c0cc6f)
+2023-11-14 14:25:25,958 home-frappe-frappe-bench:default: Job OK (ce5b29f5-2011-4f12-906d-cb13e4c0cc6f)
+2023-11-14 14:25:25,958 Result is kept for 600 seconds
+2023-11-14 14:25:25,963 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'naveenchaudharyyyy@gmail.com'}, method='frappe.core.doctype.user.user.update_gravatar', site='erp.srdc.io', user='Administrator') (c7adbb19-f70b-4f02-bd46-4b0a784f0fd4)
+2023-11-14 14:25:26,391 home-frappe-frappe-bench:default: Job OK (c7adbb19-f70b-4f02-bd46-4b0a784f0fd4)
+2023-11-14 14:25:26,392 Result is kept for 600 seconds
+2023-11-14 14:25:26,395 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: naveenchaudharyyyy@gmail.com>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='erp.srdc.io', user='Administrator') (9c35322d-b55e-4b14-8bab-e2ed0ebbec9b)
+2023-11-14 14:25:26,655 home-frappe-frappe-bench:default: Job OK (9c35322d-b55e-4b14-8bab-e2ed0ebbec9b)
+2023-11-14 14:25:26,655 Result is kept for 600 seconds
+2023-11-14 14:25:26,659 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'naveenchaudharyyyy@gmail.com'}, method='frappe.core.doctype.user.user.update_gravatar', site='erp.srdc.io', user='Administrator') (f895bc02-1ed4-44ad-9ebd-f9716a9e5c72)
+2023-11-14 14:25:27,079 home-frappe-frappe-bench:default: Job OK (f895bc02-1ed4-44ad-9ebd-f9716a9e5c72)
+2023-11-14 14:25:27,079 Result is kept for 600 seconds
+2023-11-14 14:26:22,925 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-14 14:26:23,117 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-14 14:26:23,117 Result is kept for 600 seconds
+2023-11-14 14:26:23,121 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-14 14:26:23,302 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-14 14:26:23,302 Result is kept for 600 seconds
+2023-11-14 14:26:23,306 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-14 14:26:23,523 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-14 14:26:23,523 Result is kept for 600 seconds
+2023-11-14 14:26:23,529 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-14 14:26:23,819 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-14 14:26:23,819 Result is kept for 600 seconds
+2023-11-14 14:27:33,521 Warm shut down requested
+2023-11-14 14:27:33,539 Unsubscribing from channel rq:pubsub:ab01cbc8211c42e99222509f567b97f7
+2023-11-14 14:51:27,347 Worker rq:worker:d5ee3d8b4f1545b38b3f2550fdb8b34e: started, version 1.11.1
+2023-11-14 14:51:27,347 Subscribing to channel rq:pubsub:d5ee3d8b4f1545b38b3f2550fdb8b34e
+2023-11-14 14:51:27,348 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 14:51:27,348 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-14 14:51:27,349 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-14 14:51:27,349 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-14 14:52:27,401 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-14 14:52:27,643 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-14 14:52:27,643 Result is kept for 600 seconds
+2023-11-14 14:52:27,647 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-14 14:52:27,841 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-14 14:52:27,841 Result is kept for 600 seconds
+2023-11-14 14:52:27,844 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-14 14:52:28,082 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-14 14:52:28,082 Result is kept for 600 seconds
+2023-11-14 14:52:28,086 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-14 14:52:28,311 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-14 14:52:28,311 Result is kept for 600 seconds
+2023-11-14 14:52:28,315 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-14 14:52:28,590 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-14 14:52:28,590 Result is kept for 600 seconds
+2023-11-14 14:52:28,594 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-14 14:52:28,802 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-14 14:52:28,802 Result is kept for 600 seconds
+2023-11-14 14:52:28,805 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-14 14:52:29,059 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-14 14:52:29,059 Result is kept for 600 seconds
+2023-11-14 14:52:29,063 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-14 14:52:29,300 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-14 14:52:29,300 Result is kept for 600 seconds
+2023-11-14 14:53:18,614 home-frappe-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.desk.page.backups.backups.backup_files_and_notify_user', kwargs={'user_email': 'admin@example.com'}, method='frappe.desk.page.backups.backups.backup_files_and_notify_user', site='erp.srdc.io', user='Administrator') (5273c89c-bfc9-40d9-816a-317ad38f6c9f)
+2023-11-14 14:53:19,023 home-frappe-frappe-bench:long: Job OK (5273c89c-bfc9-40d9-816a-317ad38f6c9f)
+2023-11-14 14:53:19,024 Result is kept for 600 seconds
+2023-11-14 14:53:57,321 Warm shut down requested
+2023-11-14 14:53:57,334 Unsubscribing from channel rq:pubsub:d5ee3d8b4f1545b38b3f2550fdb8b34e
+2023-11-14 14:54:12,740 Worker rq:worker:44def7a9357a497e8bc1b503cd77a736: started, version 1.11.1
+2023-11-14 14:54:12,740 Subscribing to channel rq:pubsub:44def7a9357a497e8bc1b503cd77a736
+2023-11-14 14:54:12,741 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-14 14:54:46,577 Warm shut down requested
+2023-11-14 14:54:46,578 Unsubscribing from channel rq:pubsub:44def7a9357a497e8bc1b503cd77a736
+2023-11-15 00:50:06,245 Worker rq:worker:2baac764d121465eb75c8bf2e23996be: started, version 1.11.1
+2023-11-15 00:50:06,245 Subscribing to channel rq:pubsub:2baac764d121465eb75c8bf2e23996be
+2023-11-15 00:50:06,246 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-15 00:50:06,246 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-15 00:50:06,247 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-15 00:50:06,247 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-15 00:51:06,369 home-frappe-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_drive.google_drive.daily_b..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_drive.google_drive.daily_backup)
+2023-11-15 00:51:06,769 home-frappe-frappe-bench:long: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_drive.google_drive.daily_backup)
+2023-11-15 00:51:06,769 Result is kept for 600 seconds
+2023-11-15 00:51:06,774 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.unhandled_email.unhandled_email.remove_o..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails)
+2023-11-15 00:51:06,972 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.unhandled_email.unhandled_email.remove_old_unhandled_emails)
+2023-11-15 00:51:06,972 Result is kept for 600 seconds
+2023-11-15 00:51:06,976 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_re..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed)
+2023-11-15 00:51:07,233 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed)
+2023-11-15 00:51:07,233 Result is kept for 600 seconds
+2023-11-15 00:51:07,238 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_r..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry)
+2023-11-15 00:51:07,492 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry)
+2023-11-15 00:51:07,492 Result is kept for 600 seconds
+2023-11-15 00:51:07,497 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_contacts.google_contacts.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_contacts.google_contacts.sync)
+2023-11-15 00:51:07,799 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_contacts.google_contacts.sync)
+2023-11-15 00:51:07,799 Result is kept for 600 seconds
+2023-11-15 00:51:07,804 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.social.doctype.energy_point_settings.energy_point_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points)
+2023-11-15 00:51:08,053 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points)
+2023-11-15 00:51:08,053 Result is kept for 600 seconds
+2023-11-15 00:51:08,057 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_daily_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_daily_updates)
+2023-11-15 00:51:08,261 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_daily_updates)
+2023-11-15 00:51:08,261 Result is kept for 600 seconds
+2023-11-15 00:51:08,265 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record)
+2023-11-15 00:51:08,470 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record)
+2023-11-15 00:51:08,470 Result is kept for 600 seconds
+2023-11-15 00:51:08,475 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.notification.notification.trigger_daily_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.notification.notification.trigger_daily_alerts)
+2023-11-15 00:51:08,775 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.notification.notification.trigger_daily_alerts)
+2023-11-15 00:51:08,775 Result is kept for 600 seconds
+2023-11-15 00:51:08,786 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.sessions.clear_expired_sessions'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.sessions.clear_expired_sessions)
+2023-11-15 00:51:08,989 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.sessions.clear_expired_sessions)
+2023-11-15 00:51:08,989 Result is kept for 600 seconds
+2023-11-15 00:51:08,993 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.doctype.event.event.send_event_digest'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.doctype.event.event.send_event_digest)
+2023-11-15 00:51:09,205 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.doctype.event.event.send_event_digest)
+2023-11-15 00:51:09,206 Result is kept for 600 seconds
+2023-11-15 00:51:09,209 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.notifications.clear_notifications'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.notifications.clear_notifications)
+2023-11-15 00:51:09,409 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.notifications.clear_notifications)
+2023-11-15 00:51:09,410 Result is kept for 600 seconds
+2023-11-15 00:51:09,414 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.set_expiry_for_email_queue'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.set_expiry_for_email_queue)
+2023-11-15 00:51:09,609 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.set_expiry_for_email_queue)
+2023-11-15 00:51:09,609 Result is kept for 600 seconds
+2023-11-15 00:51:09,612 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2023-11-15 00:51:09,823 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2023-11-15 00:51:09,823 Result is kept for 600 seconds
+2023-11-15 00:51:09,827 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.newsletter.newsletter.send_scheduled_ema..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2023-11-15 00:51:10,088 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2023-11-15 00:51:10,088 Result is kept for 600 seconds
+2023-11-15 00:51:10,092 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2023-11-15 00:51:10,390 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2023-11-15 00:51:10,390 Result is kept for 600 seconds
+2023-11-15 00:51:10,394 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_hourly_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2023-11-15 00:51:10,589 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2023-11-15 00:51:10,589 Result is kept for 600 seconds
+2023-11-15 00:51:10,593 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.deferred_insert.save_to_db)
+2023-11-15 00:51:10,789 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.deferred_insert.save_to_db)
+2023-11-15 00:51:10,789 Result is kept for 600 seconds
+2023-11-15 00:51:10,793 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.page.backups.backups.delete_downloadable_backups'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2023-11-15 00:51:10,989 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2023-11-15 00:51:10,989 Result is kept for 600 seconds
+2023-11-15 00:51:10,993 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.error.collect_error_snapshots'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.error.collect_error_snapshots)
+2023-11-15 00:51:11,207 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.error.collect_error_snapshots)
+2023-11-15 00:51:11,207 Result is kept for 600 seconds
+2023-11-15 00:51:11,212 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.user_settings.sync_user_settings'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2023-11-15 00:51:11,417 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2023-11-15 00:51:11,417 Result is kept for 600 seconds
+2023-11-15 00:51:11,420 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2023-11-15 00:51:11,633 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2023-11-15 00:51:11,633 Result is kept for 600 seconds
+2023-11-15 00:51:11,636 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 00:51:11,809 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 00:51:11,809 Result is kept for 600 seconds
+2023-11-15 00:51:11,812 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 00:51:11,986 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 00:51:11,986 Result is kept for 600 seconds
+2023-11-15 00:51:11,990 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 00:51:12,199 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 00:51:12,199 Result is kept for 600 seconds
+2023-11-15 00:51:12,203 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 00:51:12,455 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 00:51:12,455 Result is kept for 600 seconds
+2023-11-15 00:51:12,458 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.core.doctype.log_settings.log_settings.run_log_clean_u..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.core.doctype.log_settings.log_settings.run_log_clean_up)
+2023-11-15 00:51:12,792 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.core.doctype.log_settings.log_settings.run_log_clean_up)
+2023-11-15 00:51:12,793 Result is kept for 600 seconds
+2023-11-15 00:51:12,797 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 00:51:13,020 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 00:51:13,020 Result is kept for 600 seconds
+2023-11-15 00:51:13,024 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 00:51:13,239 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 00:51:13,239 Result is kept for 600 seconds
+2023-11-15 00:51:13,243 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 00:51:13,497 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 00:51:13,498 Result is kept for 600 seconds
+2023-11-15 00:51:13,502 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 00:51:13,754 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 00:51:13,754 Result is kept for 600 seconds
+2023-11-15 00:51:13,758 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='erp.srdc.io', user='Administrator') (33f8676f-e0ec-4270-835a-76fd497b5183)
+2023-11-15 00:51:13,904 home-frappe-frappe-bench:default: Job OK (33f8676f-e0ec-4270-835a-76fd497b5183)
+2023-11-15 00:51:13,904 Result is kept for 600 seconds
+2023-11-15 00:51:13,908 home-frappe-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.auto_email_report.auto_email_report.send..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.auto_email_report.auto_email_report.send_daily)
+2023-11-15 00:51:14,208 home-frappe-frappe-bench:long: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.auto_email_report.auto_email_report.send_daily)
+2023-11-15 00:51:14,209 Result is kept for 600 seconds
+2023-11-15 00:51:14,214 home-frappe-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.s3_backup_settings.s3_backup_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily)
+2023-11-15 00:51:14,508 home-frappe-frappe-bench:long: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily)
+2023-11-15 00:51:14,508 Result is kept for 600 seconds
+2023-11-15 00:51:14,513 home-frappe-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.change_log.check_for_update'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.change_log.check_for_update)
+2023-11-15 00:51:14,891 home-frappe-frappe-bench:long: Job OK (erp.srdc.io::scheduled_job::frappe.utils.change_log.check_for_update)
+2023-11-15 00:51:14,891 Result is kept for 600 seconds
+2023-11-15 00:51:14,899 home-frappe-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.dropbox_settings.dropbox_settings..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily)
+2023-11-15 00:51:15,219 home-frappe-frappe-bench:long: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily)
+2023-11-15 00:51:15,220 Result is kept for 600 seconds
+2023-11-15 00:52:06,499 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 00:52:06,701 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 00:52:06,701 Result is kept for 600 seconds
+2023-11-15 00:52:06,705 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 00:52:06,899 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 00:52:06,899 Result is kept for 600 seconds
+2023-11-15 00:52:06,903 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 00:52:07,100 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 00:52:07,100 Result is kept for 600 seconds
+2023-11-15 00:52:07,103 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 00:52:07,327 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 00:52:07,327 Result is kept for 600 seconds
+2023-11-15 00:52:57,248 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='<function update_index_for_path at 0x7f70c5a69620>', kwargs={'path': 'home'}, method=<function update_index_for_path at 0x7f70c5a69620>, site='erp.srdc.io', user='naveenchaudharyyyy@gmail.com') (89a24231-5a4a-44ae-a8f0-ab12eb6f30bd)
+2023-11-15 00:52:57,593 home-frappe-frappe-bench:default: Job OK (89a24231-5a4a-44ae-a8f0-ab12eb6f30bd)
+2023-11-15 00:52:57,593 Result is kept for 600 seconds
+2023-11-15 00:56:06,744 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 00:56:06,972 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 00:56:06,972 Result is kept for 600 seconds
+2023-11-15 00:56:06,976 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 00:56:07,154 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 00:56:07,154 Result is kept for 600 seconds
+2023-11-15 00:56:07,158 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 00:56:07,375 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 00:56:07,375 Result is kept for 600 seconds
+2023-11-15 00:56:07,378 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 00:56:07,627 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 00:56:07,627 Result is kept for 600 seconds
+2023-11-15 01:00:06,999 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2023-11-15 01:00:07,208 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2023-11-15 01:00:07,208 Result is kept for 600 seconds
+2023-11-15 01:00:07,213 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.newsletter.newsletter.send_scheduled_ema..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2023-11-15 01:00:07,472 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2023-11-15 01:00:07,472 Result is kept for 600 seconds
+2023-11-15 01:00:07,476 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2023-11-15 01:00:07,828 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2023-11-15 01:00:07,828 Result is kept for 600 seconds
+2023-11-15 01:00:07,834 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_hourly_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2023-11-15 01:00:08,036 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2023-11-15 01:00:08,036 Result is kept for 600 seconds
+2023-11-15 01:00:08,040 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.deferred_insert.save_to_db)
+2023-11-15 01:00:08,305 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.deferred_insert.save_to_db)
+2023-11-15 01:00:08,305 Result is kept for 600 seconds
+2023-11-15 01:00:08,308 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.page.backups.backups.delete_downloadable_backups'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2023-11-15 01:00:08,510 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2023-11-15 01:00:08,510 Result is kept for 600 seconds
+2023-11-15 01:00:08,514 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.error.collect_error_snapshots'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.error.collect_error_snapshots)
+2023-11-15 01:00:08,740 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.error.collect_error_snapshots)
+2023-11-15 01:00:08,740 Result is kept for 600 seconds
+2023-11-15 01:00:08,744 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.user_settings.sync_user_settings'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2023-11-15 01:00:08,949 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2023-11-15 01:00:08,949 Result is kept for 600 seconds
+2023-11-15 01:00:08,953 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2023-11-15 01:00:09,233 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2023-11-15 01:00:09,233 Result is kept for 600 seconds
+2023-11-15 01:00:09,239 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:00:09,465 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:00:09,465 Result is kept for 600 seconds
+2023-11-15 01:00:09,468 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:00:09,642 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:00:09,643 Result is kept for 600 seconds
+2023-11-15 01:00:09,646 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:00:09,837 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:00:09,837 Result is kept for 600 seconds
+2023-11-15 01:00:09,842 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:00:10,062 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:00:10,062 Result is kept for 600 seconds
+2023-11-15 01:00:10,066 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 01:00:10,332 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 01:00:10,332 Result is kept for 600 seconds
+2023-11-15 01:00:10,337 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 01:00:10,540 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 01:00:10,540 Result is kept for 600 seconds
+2023-11-15 01:00:10,545 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 01:00:10,833 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 01:00:10,834 Result is kept for 600 seconds
+2023-11-15 01:00:10,839 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 01:00:11,105 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 01:00:11,105 Result is kept for 600 seconds
+2023-11-15 01:04:07,221 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:04:07,401 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:04:07,401 Result is kept for 600 seconds
+2023-11-15 01:04:07,405 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:04:07,595 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:04:07,596 Result is kept for 600 seconds
+2023-11-15 01:04:07,600 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:04:07,796 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:04:07,796 Result is kept for 600 seconds
+2023-11-15 01:04:07,802 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:04:08,021 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:04:08,021 Result is kept for 600 seconds
+2023-11-15 01:08:07,475 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:08:07,700 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:08:07,700 Result is kept for 600 seconds
+2023-11-15 01:08:07,705 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:08:07,883 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:08:07,883 Result is kept for 600 seconds
+2023-11-15 01:08:07,887 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:08:08,110 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:08:08,110 Result is kept for 600 seconds
+2023-11-15 01:08:08,116 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:08:08,389 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:08:08,389 Result is kept for 600 seconds
+2023-11-15 01:10:07,605 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 01:10:07,856 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 01:10:07,856 Result is kept for 600 seconds
+2023-11-15 01:10:07,860 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-15 01:10:07,860 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-15 01:10:07,861 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-15 01:12:07,720 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:12:07,953 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:12:07,953 Result is kept for 600 seconds
+2023-11-15 01:12:07,957 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:12:08,139 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:12:08,139 Result is kept for 600 seconds
+2023-11-15 01:12:08,143 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:12:08,339 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:12:08,339 Result is kept for 600 seconds
+2023-11-15 01:12:08,344 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:12:08,605 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:12:08,605 Result is kept for 600 seconds
+2023-11-15 01:15:07,928 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 01:15:08,153 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 01:15:08,153 Result is kept for 600 seconds
+2023-11-15 01:15:08,156 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 01:15:08,444 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 01:15:08,444 Result is kept for 600 seconds
+2023-11-15 01:15:08,448 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 01:15:08,663 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 01:15:08,663 Result is kept for 600 seconds
+2023-11-15 01:16:07,984 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:16:08,213 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:16:08,213 Result is kept for 600 seconds
+2023-11-15 01:16:08,217 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:16:08,393 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:16:08,393 Result is kept for 600 seconds
+2023-11-15 01:16:08,399 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:16:08,621 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:16:08,621 Result is kept for 600 seconds
+2023-11-15 01:16:08,626 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:16:08,902 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:16:08,902 Result is kept for 600 seconds
+2023-11-15 01:20:08,222 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:20:08,422 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:20:08,422 Result is kept for 600 seconds
+2023-11-15 01:20:08,426 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:20:08,604 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:20:08,604 Result is kept for 600 seconds
+2023-11-15 01:20:08,607 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:20:08,801 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:20:08,801 Result is kept for 600 seconds
+2023-11-15 01:20:08,805 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:20:09,030 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:20:09,030 Result is kept for 600 seconds
+2023-11-15 01:20:09,035 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 01:20:09,288 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 01:20:09,288 Result is kept for 600 seconds
+2023-11-15 01:24:08,544 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:24:08,765 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 01:24:08,765 Result is kept for 600 seconds
+2023-11-15 01:24:08,769 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:24:08,944 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 01:24:08,944 Result is kept for 600 seconds
+2023-11-15 01:24:08,947 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:24:09,190 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 01:24:09,190 Result is kept for 600 seconds
+2023-11-15 01:24:09,193 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:24:09,412 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 01:24:09,412 Result is kept for 600 seconds
+2023-11-15 11:55:17,185 Worker rq:worker:706123f6304f4bca998f2648113cd11b: started, version 1.11.1
+2023-11-15 11:55:17,186 Subscribing to channel rq:pubsub:706123f6304f4bca998f2648113cd11b
+2023-11-15 11:55:17,186 *** Listening on home-frappe-frappe-bench:short, home-frappe-frappe-bench:default, home-frappe-frappe-bench:long...
+2023-11-15 11:55:17,187 Cleaning registries for queue: home-frappe-frappe-bench:short
+2023-11-15 11:55:17,187 Cleaning registries for queue: home-frappe-frappe-bench:default
+2023-11-15 11:55:17,188 Cleaning registries for queue: home-frappe-frappe-bench:long
+2023-11-15 11:56:17,388 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2023-11-15 11:56:17,760 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2023-11-15 11:56:17,760 Result is kept for 600 seconds
+2023-11-15 11:56:17,763 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.newsletter.newsletter.send_scheduled_ema..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2023-11-15 11:56:18,006 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2023-11-15 11:56:18,006 Result is kept for 600 seconds
+2023-11-15 11:56:18,010 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2023-11-15 11:56:18,313 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2023-11-15 11:56:18,313 Result is kept for 600 seconds
+2023-11-15 11:56:18,316 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_hourly_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2023-11-15 11:56:18,508 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2023-11-15 11:56:18,508 Result is kept for 600 seconds
+2023-11-15 11:56:18,512 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.deferred_insert.save_to_db)
+2023-11-15 11:56:18,720 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.deferred_insert.save_to_db)
+2023-11-15 11:56:18,720 Result is kept for 600 seconds
+2023-11-15 11:56:18,723 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.page.backups.backups.delete_downloadable_backups'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2023-11-15 11:56:18,919 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2023-11-15 11:56:18,919 Result is kept for 600 seconds
+2023-11-15 11:56:18,923 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.error.collect_error_snapshots'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.error.collect_error_snapshots)
+2023-11-15 11:56:19,136 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.error.collect_error_snapshots)
+2023-11-15 11:56:19,136 Result is kept for 600 seconds
+2023-11-15 11:56:19,140 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.user_settings.sync_user_settings'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2023-11-15 11:56:19,333 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2023-11-15 11:56:19,333 Result is kept for 600 seconds
+2023-11-15 11:56:19,336 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2023-11-15 11:56:19,545 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2023-11-15 11:56:19,545 Result is kept for 600 seconds
+2023-11-15 11:56:19,548 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 11:56:19,722 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.monitor.flush)
+2023-11-15 11:56:19,722 Result is kept for 600 seconds
+2023-11-15 11:56:19,725 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 11:56:19,901 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.utils.global_search.sync_global_search)
+2023-11-15 11:56:19,901 Result is kept for 600 seconds
+2023-11-15 11:56:19,904 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 11:56:20,110 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2023-11-15 11:56:20,110 Result is kept for 600 seconds
+2023-11-15 11:56:20,114 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 11:56:20,337 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.queue.flush)
+2023-11-15 11:56:20,337 Result is kept for 600 seconds
+2023-11-15 11:56:20,341 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 11:56:20,567 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2023-11-15 11:56:20,567 Result is kept for 600 seconds
+2023-11-15 11:56:20,570 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 11:56:20,769 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2023-11-15 11:56:20,769 Result is kept for 600 seconds
+2023-11-15 11:56:20,772 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 11:56:21,021 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2023-11-15 11:56:21,021 Result is kept for 600 seconds
+2023-11-15 11:56:21,025 home-frappe-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erp.srdc.io', user='Administrator') (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 11:56:21,253 home-frappe-frappe-bench:default: Job OK (erp.srdc.io::scheduled_job::frappe.oauth.delete_oauth2_data)
+2023-11-15 11:56:21,253 Result is kept for 600 seconds
+2023-11-15 11:57:14,392 Warm shut down requested
+2023-11-15 11:57:14,419 Unsubscribing from channel rq:pubsub:706123f6304f4bca998f2648113cd11b

@@ -1,0 +1,1410 @@
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 829, in __call__
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 270, in start_worker
+    worker.work(
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 644, in work
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    self.register_death()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3894, in _execute_transaction
+        self.parse_response(connection, '_')pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3977, in parse_response
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+        response = self.parse_response(block=False, timeout=timeout)
+ result = Redis.parse_response( 
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 915, in parse_response
+^^^^^    ^response = connection.read_response()^
+^  ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^^
+^  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+^^^^^    ^if not block and not conn.can_read(timeout=timeout):^
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 
+     File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 739, in read_response
+      ^^^^^^^^^^^^^^^^^^^    ^^^response = self._parser.read_response()^
+^  ^ ^ ^ ^ ^ ^ 
+   File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+          return self._parser.can_read(timeout)^
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 470, in read_response
+^^^^^    self.read_from_socket()^
+^  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 452, in read_from_socket
+^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    raise ConnectionError("Error while reading from socket: %s" %
+    redis.exceptionsreturn self.read_from_socket(timeout=timeout,
+. ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+  Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 270, in start_worker
+    worker.work(
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/_compat.py", line 75, in recv_into
+    return sock.recv_into(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 270, in start_worker
+    worker.work(
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/frappe/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:4: DeprecationWarning: 'cgitb' is deprecated and slated for removal in Python 3.13
+  import cgitb
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/botocore/httpsession.py:19: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/dropbox/session.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:4: DeprecationWarning: 'cgitb' is deprecated and slated for removal in Python 3.13
+  import cgitb
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google.logging')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2350: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(parent)
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:4: DeprecationWarning: 'cgitb' is deprecated and slated for removal in Python 3.13
+  import cgitb
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/file/utils.py:2: DeprecationWarning: 'imghdr' is deprecated and slated for removal in Python 3.13
+  import imghdr
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/babel/messages/catalog.py:15: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  from cgi import parse_header
+/home/frappe/frappe-bench/env/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
